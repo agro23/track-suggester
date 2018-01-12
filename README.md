@@ -11,7 +11,7 @@ _and then suggests which language track they should consider applying for at Epi
 
 ## Setup/Installation Requirements
 
-* Download the repository and connect to them via your browser.
+* Download the repository and connect to the index.html file via your browser.
 This project will have a little bit of CSS but nothing every browser won't render. Most of the files will call out to the main Bootstrap CDN location
 
 ## Known Bugs
