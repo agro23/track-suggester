@@ -14,43 +14,67 @@
 
   <div class="container top">
     <!-- top level container -->
-    <h1>blah blah blah</h1>
+    <h1>Epicodus Program Preference Survey</h1>
+
+    <div class="panel panel-default">
+      <div class="panel-heading"><h3>Determine which learning track is right for you!</h3></div>
+      <div class="panel-body">
+        <div>
+          <p>There are multiple tracks of study you can take at Epicodus.
+            Each one focuses on a particular language and development platform
+            (after you have learned the basics of programming in HTML, CSS, and javascript of course!)
+          </p>
+          <p>The following survey should help you determine which track will best match your interests to make your learning path more enjoyable.</p>
+          <p>While the results are not scientific, the answer should help point you in the right direction.</p>
+        </div>
+      </div>
+    </div>
 
     <div class="well questions form-group">
       <form id="survey">
+
         <div class="panel panel-default">
-          <div class="panel-heading">Question 1</div>
+          <div class="panel-heading"><h3 class="inLine">Please enter your full name.</h3></div>
+          <div class="panel-body">
+            <div class="inputName">
+              <input id="name" class="form-control" type="text">
+            </div>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading">How would you like to work with a large company like Microsoft or Oracle?</div>
           <div class="panel-body">
             <!-- Question 1 -->
             <div class="radio">
               <label>
-              <input type="radio" name="question1" value="1">
-              1) Chocolate
-            </label>
+                <input type="radio" name="question1" value="1">
+                1) I do not want to at all
+              </label>
             </div>
             <div class="radio">
               <label>
-              <input type="radio" name="question1" value="2">
-              2) Vanilla
-            </label>
+                <input type="radio" name="question1" value="2">
+                2) I am not very interested
+              </label>
             </div>
             <div class="radio">
               <label>
-              <input type="radio" name="question1" value="3">
-              3) Cookies & Cream
-            </label>
+                <input type="radio" name="question1" value="3">
+                3) I could go either way, big or small.
+              </label>
             </div>
             <div class="radio">
               <label>
-              <input type="radio" name="question1" value="4">
-              4) Milano
-            </label>
+                <input type="radio" name="question1" value="4">
+                4) I would prefer a large company.
+              </label>
             </div>
             <div class="radio">
               <label>
-              <input type="radio" name="question1" value="5" checked>
-              5) I'm not sure.
-            </label>
+                <input type="radio" name="question1" value="5" checked>
+                5) It is my absolute top priority.
+              </label>
             </div>
             <!-- End Question 1 -->
           </div>
@@ -59,37 +83,37 @@
         <!--end panel -->
 
         <div class="panel panel-default">
-          <div class="panel-heading">Question 2</div>
+          <div class="panel-heading">How interested are you in delving into the guts of the Internet, taking things apart, seeing how they work?</div>
           <div class="panel-body">
           <!-- Question 2 -->
           <div class="radio">
             <label>
-              <input type="radio" name="question2" value="chocolate">
-              Chocolate
+              <input type="radio" name="question2" value="1">
+              1) I do not want to at all.
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="question2" value="vanilla">
-              Vanilla
+              <input type="radio" name="question2" value="2">
+              2) I am not very interested.
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="question2" value="cookiesandcream">
-              Cookies & Cream
+              <input type="radio" name="question2" value="3">
+              3) It might be interesting.
             </label>
           </div>
           <div class="radio">
             <label>
-            <input type="radio" name="question2" value="oreo">
-            Oreo
-          </label>
+              <input type="radio" name="question2" value="4">
+              4) I would like to get a better understanding of where my clicks actually go.
+            </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="question2" value="unsure" checked>
-              I'm not sure.
+              <input type="radio" name="question2" value="5" checked>
+              5) I really want to find out how it works when servers interpret the data we send from our computers.
             </label>
           </div>
           <!-- End Question 2 -->
@@ -98,37 +122,39 @@
         <!-- end panel 2-->
 
         <div class="panel panel-default">
-          <div class="panel-heading">Question 3</div>
+          <div class="panel-heading">Is it important that the skills you learn are applicable
+            across a broad range of companies from retail eCommerce websites
+            to backend hosting services and everything in between?</div>
           <div class="panel-body">
           <!-- Question 3 -->
           <div class="radio">
             <label>
-              <input type="radio" name="question3" value="chocolate">
-              Chocolate
+              <input type="radio" name="question3" value="1">
+              1) I really need to focus on one area of expertise and would like to just go in, do my job, and go home again.
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="question3" value="vanilla">
-              Vanilla
+              <input type="radio" name="question3" value="2">
+              2) I am okay with a smaller range of business types needing my expertise.
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="question3" value="cookiesandcream">
-              Cookies & Cream
+              <input type="radio" name="question3" value="3">
+              3) It doesn't really matter how or where I work in programming so long as I have learned the skills needed to market myself.
             </label>
           </div>
           <div class="radio">
             <label>
-            <input type="radio" name="question3" value="teacookie">
-            Tea Cookie
-          </label>
+            <input type="radio" name="question3" value="4">
+              4) I really like the idea of being able to move from company to company and task to task with some variety.
+            </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="question3" value="unsure" checked>
-              I'm not sure.
+              <input type="radio" name="question3" value="5" checked>
+              5) It is essential that I can find employment wherever and whenever work is available so long as my skills are required.
             </label>
           </div>
           <!-- End Question 3 -->
@@ -137,37 +163,37 @@
         <!-- end panel 3-->
 
         <div class="panel panel-default">
-          <div class="panel-heading">Question 4</div>
+          <div class="panel-heading">Do you enjoy design and believe that how a website is presented matters as much or more than the product itself?</div>
           <div class="panel-body">
             <!-- Question 4 -->
           <div class="radio">
             <label>
-              <input type="radio" name="question4" value="chocolate">
-              Chocolate
+              <input type="radio" name="question4" value="1">
+              1) No. So long as the product works I'm happy.
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="question4" value="vanilla">
-              Vanilla
+              <input type="radio" name="question4" value="2">
+              2) Some basic design is necessary but it should not be too distracting.
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="question4" value="cookiesandcream">
-              Cookies & Cream
+              <input type="radio" name="question4" value="3">
+              3) Design can be an important part of the web browsing experience.
             </label>
           </div>
           <div class="radio">
             <label>
-            <input type="radio" name="question4" value="windmill">
-            Windmill
-          </label>
+            <input type="radio" name="question4" value="4">
+              4) I really think that good design can lead to more positive online experiences.
+            </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="question4" value="unsure" checked>
-              I'm not sure.
+              <input type="radio" name="question4" value="5" checked>
+              5) Design is vital. Function follows form on the web. Bad design has killed more products than bad results.
             </label>
           </div>
           <!-- End Question 4 -->
@@ -176,37 +202,37 @@
         <!-- end panel 4 -->
 
         <div class="panel panel-default">
-          <div class="panel-heading">Question 5</div>
+          <div class="panel-heading">How interested are you in working with mobile devices and making phone applications?</div>
           <div class="panel-body">
             <!-- Question 5 -->
           <div class="radio">
             <label>
-              <input type="radio" name="question5" value="chocolate">
-              Chocolate
+              <input type="radio" name="question5" value="1">
+              1) I only really use my phone for calls and texts.
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="question5" value="vanilla">
-              Vanilla
+              <input type="radio" name="question5" value="2">
+              2) I use a few apps but working with mobile phones is not very appealing.
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="question5" value="cookiesandcream">
-              Cookies & Cream
+              <input type="radio" name="question5" value="3">
+              3) I like mobile phones well enough. I think there is still business to be done in that field.
             </label>
           </div>
           <div class="radio">
             <label>
-            <input type="radio" name="question5" value="snickerdoodle">
-            Snickerdoodle
-          </label>
+            <input type="radio" name="question5" value="4">
+              4) I am very interested in mobile development and the tools that go into making those apps.
+            </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="question5" value="unsure" checked>
-              I'm not sure.
+              <input type="radio" name="question5" value="5" checked>
+              5) Are you kidding? I'm taking this survey on my phone right now.
             </label>
           </div>
           <!-- End Question 5 -->
