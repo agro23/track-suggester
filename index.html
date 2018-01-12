@@ -1,174 +1,233 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="js/scripts.js"></script>
-    <meta charset="utf-8">
-    <title>Epicodus Track Suggester</title>
-  </head>
-  <body>
 
-    <div class = "container top"> <!-- top level container -->
-      <h1>blah blah blah</h1>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <meta charset="utf-8">
+  <title>Epicodus Track Suggester</title>
+</head>
 
-      <div class="well questions form-group">
-        <form>
-        <div class="panel">
-        <!-- Question 1 -->
-        <div class="radio">
-          <label>
-            <input type="radio" name="question1" value="chocolate">
-            Chocolate
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question1" value="vanilla">
-            Vanilla
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question1" value="cookiesandcream">
-            Cookies & Cream
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question1" value="unsure1" checked>
-            I'm not sure.
-          </label>
-        </div>
-        <!-- End Question 1 -->
-      </div> <!--end panel -->
+<body>
 
-        <div class="panel">
-        <!-- Question 2 -->
-        <div class="radio">
-          <label>
-            <input type="radio" name="question2" value="chocolate">
-            Chocolate
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question2" value="vanilla">
-            Vanilla
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question2" value="cookiesandcream">
-            Cookies & Cream
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question2" value="unsure" checked>
-            I'm not sure.
-          </label>
-        </div>
-        <!-- End Question 2 -->
-        </div> <!-- end panel 2-->
+  <div class="container top">
+    <!-- top level container -->
+    <h1>blah blah blah</h1>
 
-        <div class="panel">
-        <!-- Question 3 -->
-        <div class="radio">
-          <label>
-            <input type="radio" name="question3" value="chocolate">
-            Chocolate
-          </label>
+    <div class="well questions form-group">
+      <form id="survey">
+        <div class="panel panel-default">
+          <div class="panel-heading">Question 1</div>
+          <div class="panel-body">
+            <!-- Question 1 -->
+            <div class="radio">
+              <label>
+              <input type="radio" name="question1" value="chocolate">
+              Chocolate
+            </label>
+            </div>
+            <div class="radio">
+              <label>
+              <input type="radio" name="question1" value="vanilla">
+              Vanilla
+            </label>
+            </div>
+            <div class="radio">
+              <label>
+              <input type="radio" name="question1" value="cookiesandcream">
+              Cookies & Cream
+            </label>
+            </div>
+            <div class="radio">
+              <label>
+              <input type="radio" name="question1" value="milano">
+              Milano
+            </label>
+            </div>
+            <div class="radio">
+              <label>
+              <input type="radio" name="question1" value="unsure1" checked>
+              I'm not sure.
+            </label>
+            </div>
+            <!-- End Question 1 -->
+          </div>
+          <!-- end panel body-->
         </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question3" value="vanilla">
-            Vanilla
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question3" value="cookiesandcream">
-            Cookies & Cream
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question3" value="unsure" checked>
-            I'm not sure.
-          </label>
-        </div>
-        <!-- End Question 3 -->
-        </div> <!-- end panel 3-->
+        <!--end panel -->
 
-        <div class="panel">
-        <!-- Question 4 -->
-        <div class="radio">
-          <label>
-            <input type="radio" name="question4" value="chocolate">
-            Chocolate
+        <div class="panel panel-default">
+          <div class="panel-heading">Question 2</div>
+          <div class="panel-body">
+          <!-- Question 2 -->
+          <div class="radio">
+            <label>
+              <input type="radio" name="question2" value="chocolate">
+              Chocolate
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question2" value="vanilla">
+              Vanilla
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question2" value="cookiesandcream">
+              Cookies & Cream
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+            <input type="radio" name="question2" value="oreo">
+            Oreo
           </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question2" value="unsure" checked>
+              I'm not sure.
+            </label>
+          </div>
+          <!-- End Question 2 -->
+          </div>
         </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question4" value="vanilla">
-            Vanilla
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question4" value="cookiesandcream">
-            Cookies & Cream
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question4" value="unsure" checked>
-            I'm not sure.
-          </label>
-        </div>
-        <!-- End Question 4 -->
-        </div> <!-- end panel 4 -->
+        <!-- end panel 2-->
 
-        <div class="panel">
-        <!-- Question 5 -->
-        <div class="radio">
-          <label>
-            <input type="radio" name="question5" value="chocolate">
-            Chocolate
+        <div class="panel panel-default">
+          <div class="panel-heading">Question 3</div>
+          <div class="panel-body">
+          <!-- Question 3 -->
+          <div class="radio">
+            <label>
+              <input type="radio" name="question3" value="chocolate">
+              Chocolate
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question3" value="vanilla">
+              Vanilla
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question3" value="cookiesandcream">
+              Cookies & Cream
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+            <input type="radio" name="question3" value="teacookie">
+            Tea Cookie
           </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question3" value="unsure" checked>
+              I'm not sure.
+            </label>
+          </div>
+          <!-- End Question 3 -->
+          </div>
         </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question5" value="vanilla">
-            Vanilla
+        <!-- end panel 3-->
+
+        <div class="panel panel-default">
+          <div class="panel-heading">Question 4</div>
+          <div class="panel-body">
+            <!-- Question 4 -->
+          <div class="radio">
+            <label>
+              <input type="radio" name="question4" value="chocolate">
+              Chocolate
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question4" value="vanilla">
+              Vanilla
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question4" value="cookiesandcream">
+              Cookies & Cream
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+            <input type="radio" name="question4" value="windmill">
+            Windmill
           </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question4" value="unsure" checked>
+              I'm not sure.
+            </label>
+          </div>
+          <!-- End Question 4 -->
+          </div>
         </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question5" value="cookiesandcream">
-            Cookies & Cream
+        <!-- end panel 4 -->
+
+        <div class="panel panel-default">
+          <div class="panel-heading">Question 5</div>
+          <div class="panel-body">
+            <!-- Question 5 -->
+          <div class="radio">
+            <label>
+              <input type="radio" name="question5" value="chocolate">
+              Chocolate
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question5" value="vanilla">
+              Vanilla
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question5" value="cookiesandcream">
+              Cookies & Cream
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+            <input type="radio" name="question5" value="snickerdoodle">
+            Snickerdoodle
           </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question5" value="unsure" checked>
+              I'm not sure.
+            </label>
+          </div>
+          <!-- End Question 5 -->
+          </div>
         </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question5" value="unsure" checked>
-            I'm not sure.
-          </label>
-        </div>
-        <!-- End Question 5 -->
-        </div> <!-- end panel 5 -->
+        <!-- end panel 5 -->
 
         <button type="submit" class="btn">SUBMIT</button>
 
-      </div><!-- End Questions -->
+    </div>
+    <!-- End Questions -->
     </form>
+
     <div class="results">
       <h1>Presenting your results via .text("")</h1>
-    </div><!-- End results -->
-    </div><!-- end top level -->
+    </div>
+    <!-- End results -->
+  </div>
+  <!-- end top level -->
 
 
-  </body>
+</body>
+
 </html>
