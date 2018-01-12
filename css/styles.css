@@ -1,8 +1,48 @@
 
+p {
+  font-size: 1em;
+}
+
 h3 {
-  background-color: teal;
+  background-color: #00b3b4;
 }
 
 .inLine {
   display: inline;
+}
+
+.results {
+  float: left;
+  position: absolute;
+  top: 50%;
+  left: 33%;
+  margin: auto;
+  padding: 2em;
+  border-radius: 40px 40px;
+  border solid 3px lightgray;
+  font-size: 1.25em;
+  width: 33%;
+  min-width: 200px;
+  background-color: #00b3b4;
+}
+
+#csharp-results {
+  display: none;
+
+}
+
+#java-results {
+  display: none;
+}
+
+#php-results {
+  display: none;
+}
+
+#ruby-results {
+  display: none;
+}
+
+#css-results {
+  display: none;
 }
