@@ -1,19 +1,5 @@
 $(document).ready(function() {
 
-// Variables
-var result = "RESULTS";
-var flavor ="none";
-// var myChoice = "";
-
-
-
-
-
-
-// var results = function (q1, q2, q3, q4, q5) {
-//   return (q1+q2+q3+q4+q5);
-// }
-
 var getAnswer = function (q1, q2, q3, q4, q5) {
   var cSharp = java = php = ruby = css = 0;
   // Incorrect weighting needs adjustment
@@ -31,7 +17,6 @@ var getAnswer = function (q1, q2, q3, q4, q5) {
   css = Math.floor(Math.random() * Math.floor(5))+1;
 
   console.log (cSharp, java, php, ruby, css);
-
 
   if ( (cSharp >= java) && (cSharp >= php) && (cSharp >= ruby) && (cSharp >= css) ) {
     answer = "csharp-results";
@@ -64,14 +49,12 @@ var getAnswer = function (q1, q2, q3, q4, q5) {
     console.log("My choice: " + myChoice);
 
     $(myChoice).show();
-    // $("#css-results").show();
 
     console.log("myChoice after show = " + myChoice);
 
     $(myChoice+"-close").on("click", function(e){
       e.preventDefault();
       $(myChoice).hide();
-
       console.log("myChoice after hide = " + myChoice);
       // myChoice ="";
     });

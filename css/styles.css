@@ -3,6 +3,10 @@ p {
   font-size: 1em;
 }
 
+h1 {
+  text-align: center;
+}
+
 h3 {
   background-color: #00b3b4;
 }
@@ -19,7 +23,7 @@ h3 {
   margin: auto;
   padding: 2em;
   border-radius: 40px 40px;
-  border solid 3px lightgray;
+  /*border solid 3px lightgray;*/
   font-size: 1.25em;
   width: 33%;
   min-width: 200px;
@@ -28,7 +32,6 @@ h3 {
 
 #csharp-results {
   display: none;
-
 }
 
 #java-results {
