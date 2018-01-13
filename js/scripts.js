@@ -33,6 +33,7 @@ var getAnswer = function (q1, q2, q3, q4, q5) {
   }
   console.log("Answer = " + answer);
   return answer;
+
 }
 
   $("form#survey").submit(function(e) {
@@ -49,14 +50,12 @@ var getAnswer = function (q1, q2, q3, q4, q5) {
     console.log("My choice: " + myChoice);
 
     $(myChoice).show();
-
     console.log("myChoice after show = " + myChoice);
 
     $(myChoice+"-close").on("click", function(e){
       e.preventDefault();
       $(myChoice).hide();
       console.log("myChoice after hide = " + myChoice);
-      // myChoice ="";
     });
 
     $("#survey").trigger("reset"); // reset form to defaults;
