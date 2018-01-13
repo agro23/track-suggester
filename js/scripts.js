@@ -16,13 +16,14 @@ var flavor ="none";
 
 var getAnswer = function (q1, q2, q3, q4, q5) {
   var cSharp = java = php = ruby = css = 0;
+  // Incorrect weighting needs adjustment
   // cSharp = (5 * q1) + (4 * q2) + (3 * q3) + (4 * q4) + (5 * q5);
   // java = (4 * q1) + (2 * q2) + (2 * q3) + (2 * q4) + (4 * q5);
   // php = (3 * q1) + (5 * q2) + (4 * q3) + (3 * q4) + (2 * q5);
   // ruby = (2 * q1) + (4 * q2) + (3 * q3) + (4 * q4) + (1 * q5);
   // css = (1 * q1) + (1 * q2) + (5 * q3) + (5 * q4) + (5 * q5);
 
-
+  // random weighting results
   cSharp = Math.floor(Math.random() * Math.floor(5))+1;
   java = Math.floor(Math.random() * Math.floor(5))+1;
   php = Math.floor(Math.random() * Math.floor(5))+1;
@@ -62,14 +63,15 @@ var getAnswer = function (q1, q2, q3, q4, q5) {
     var myChoice = "#" + getAnswer(question1, question2, question3, question4, question5);
     console.log("My choice: " + myChoice);
 
-    // $(myChoice).show();
-    $("#java-results").show();
+    $(myChoice).show();
+    // $("#css-results").show();
 
     console.log("myChoice after show = " + myChoice);
 
-    $("shutter").on("click", function(e){
+    $(myChoice+"-close").on("click", function(e){
       e.preventDefault();
       $(myChoice).hide();
+
       console.log("myChoice after hide = " + myChoice);
       // myChoice ="";
     });
